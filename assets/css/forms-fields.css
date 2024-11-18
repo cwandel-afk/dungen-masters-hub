@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  button[type="submit"] {
+    @apply sticky bottom-4;
+    @apply w-40 py-2 align-middle rounded-md shadow-md;
+    @apply text-white font-semibold hover:text-black;
+    @apply bg-slate-600 hover:bg-slate-300;
+    @apply ring-offset-2 ring-sky-500 hover:ring-2 focus:ring-2 focus:outline-none;
+  }
+
+  form {
+    @apply block space-y-4 w-full p-4 relative;
+  }
+
+  input {
+    @apply w-96 h-12 mx-4 border-2 p-2 border-stone-400 rounded-md hover:ring-2 ring-sky-500 ring-offset-1 focus:ring-2 focus:outline-none;
+  }
+
+  div.form-row {
+    @apply flex items-center justify-between;
+  }
+}
